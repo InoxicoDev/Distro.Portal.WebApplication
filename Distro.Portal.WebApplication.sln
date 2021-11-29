@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Distro.Portal.WebApplication", "Distro.Portal.WebApplication\Distro.Portal.WebApplication.csproj", "{2B976BD1-97D0-4410-9FF7-F9F0DB5775C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservices", "{0D9F6332-1608-4FD3-BFF0-7B492F0E7919}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B976BD1-97D0-4410-9FF7-F9F0DB5775C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B976BD1-97D0-4410-9FF7-F9F0DB5775C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B976BD1-97D0-4410-9FF7-F9F0DB5775C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B976BD1-97D0-4410-9FF7-F9F0DB5775C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2811FCF-E0A9-4567-B7BF-A9DCCFA2BF6C}
+	EndGlobalSection
+EndGlobal
