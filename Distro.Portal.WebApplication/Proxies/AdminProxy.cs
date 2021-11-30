@@ -1,6 +1,6 @@
 ﻿namespace Distro.Portal.WebApplication.Proxies
 {
-    public class AdminProxy : 
+    public class AdminProxy
     {
     }
 }
