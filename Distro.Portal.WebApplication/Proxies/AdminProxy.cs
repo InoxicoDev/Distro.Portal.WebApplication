@@ -1,6 +1,6 @@
 ﻿namespace Distro.Portal.WebApplication.Proxies
 {
-    public class AdminMicoservice
+    public class AdminProxy : 
     {
     }
 }
