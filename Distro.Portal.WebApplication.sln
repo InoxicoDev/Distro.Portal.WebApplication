@@ -3,9 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Distro.Portal.WebApplication", "Distro.Portal.WebApplication\Distro.Portal.WebApplication.csproj", "{2B976BD1-97D0-4410-9FF7-F9F0DB5775C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Distro.Portal.WebApplication", "Distro.Portal.WebApplication\Distro.Portal.WebApplication.csproj", "{2B976BD1-97D0-4410-9FF7-F9F0DB5775C0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservices", "{0D9F6332-1608-4FD3-BFF0-7B492F0E7919}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Admin", "Admin", "{5ADCF002-8AE2-46A1-BD11-A83CF3E1D2DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ordering", "Ordering", "{B0767E78-6A10-4234-9DE7-A878D151AC31}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Distro.Seedworks.DataAccess", "Distro.Admin.Microservice\Distro.Seedworks.DataAccess\Distro.Seedworks.DataAccess\Distro.Seedworks.DataAccess.csproj", "{DAA9BEBD-6704-40F3-8CD9-7081B532322F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Distro.Seedworks.Instrumentation", "Distro.Admin.Microservice\Distro.Seedworks.Instrumentation\Distro.Seedworks.Instrumentation\Distro.Seedworks.Instrumentation.csproj", "{75835584-4407-4D4D-A4EA-229F75F995E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Distro.Admin.DataAccess", "Distro.Admin.Microservice\Distro.Admin.DataAccess\Distro.Admin.DataAccess.csproj", "{D8901509-2A70-4212-A136-E587C618242F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Distro.Admin.Domain", "Distro.Admin.Microservice\Distro.Admin.Domain\Distro.Admin.Domain.csproj", "{818AA478-F79B-4233-B0FD-BBBD202F42E9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Distro.Admin.Domain.Services", "Distro.Admin.Microservice\Distro.Admin.Domain.Services\Distro.Admin.Domain.Services.csproj", "{0F89218E-3C48-45FD-BCF4-80D0233789A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Distro.Seedworks.Instrumentation", "Distro.Ordering.Microservice\Distro.Seedworks.Instrumentation\Distro.Seedworks.Instrumentation\Distro.Seedworks.Instrumentation.csproj", "{B6E7E631-DD56-43DD-A811-034AE0658C86}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Distro.Seedworks.DataAccess", "Distro.Ordering.Microservice\Distro.Seedworks.DataAccess\Distro.Seedworks.DataAccess\Distro.Seedworks.DataAccess.csproj", "{0138095C-D02D-4A7D-9602-83504D2E4A2C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Distro.Ordering.DataAccess", "Distro.Ordering.Microservice\Distro.Ordering.DataAccess\Distro.Ordering.DataAccess.csproj", "{97361489-C316-495D-945A-E560FE260C3C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Distro.Ordering.Domain", "Distro.Ordering.Microservice\Distro.Ordering.Domain\Distro.Ordering.Domain.csproj", "{352AC00A-C4B9-486F-9313-A975B552A1C7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Distro.Ordering.Domain.Services", "Distro.Ordering.Microservice\Distro.Ordering.Domain.Services\Distro.Ordering.Domain.Services.csproj", "{DF0EAE5F-DC11-450F-8823-34836A32F471}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,9 +41,63 @@ Global
 		{2B976BD1-97D0-4410-9FF7-F9F0DB5775C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B976BD1-97D0-4410-9FF7-F9F0DB5775C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B976BD1-97D0-4410-9FF7-F9F0DB5775C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAA9BEBD-6704-40F3-8CD9-7081B532322F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAA9BEBD-6704-40F3-8CD9-7081B532322F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAA9BEBD-6704-40F3-8CD9-7081B532322F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAA9BEBD-6704-40F3-8CD9-7081B532322F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75835584-4407-4D4D-A4EA-229F75F995E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75835584-4407-4D4D-A4EA-229F75F995E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75835584-4407-4D4D-A4EA-229F75F995E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75835584-4407-4D4D-A4EA-229F75F995E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8901509-2A70-4212-A136-E587C618242F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8901509-2A70-4212-A136-E587C618242F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8901509-2A70-4212-A136-E587C618242F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8901509-2A70-4212-A136-E587C618242F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{818AA478-F79B-4233-B0FD-BBBD202F42E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{818AA478-F79B-4233-B0FD-BBBD202F42E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{818AA478-F79B-4233-B0FD-BBBD202F42E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{818AA478-F79B-4233-B0FD-BBBD202F42E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F89218E-3C48-45FD-BCF4-80D0233789A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F89218E-3C48-45FD-BCF4-80D0233789A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F89218E-3C48-45FD-BCF4-80D0233789A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F89218E-3C48-45FD-BCF4-80D0233789A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6E7E631-DD56-43DD-A811-034AE0658C86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6E7E631-DD56-43DD-A811-034AE0658C86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6E7E631-DD56-43DD-A811-034AE0658C86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6E7E631-DD56-43DD-A811-034AE0658C86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0138095C-D02D-4A7D-9602-83504D2E4A2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0138095C-D02D-4A7D-9602-83504D2E4A2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0138095C-D02D-4A7D-9602-83504D2E4A2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0138095C-D02D-4A7D-9602-83504D2E4A2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97361489-C316-495D-945A-E560FE260C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97361489-C316-495D-945A-E560FE260C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97361489-C316-495D-945A-E560FE260C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97361489-C316-495D-945A-E560FE260C3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{352AC00A-C4B9-486F-9313-A975B552A1C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{352AC00A-C4B9-486F-9313-A975B552A1C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{352AC00A-C4B9-486F-9313-A975B552A1C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{352AC00A-C4B9-486F-9313-A975B552A1C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF0EAE5F-DC11-450F-8823-34836A32F471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF0EAE5F-DC11-450F-8823-34836A32F471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF0EAE5F-DC11-450F-8823-34836A32F471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF0EAE5F-DC11-450F-8823-34836A32F471}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5ADCF002-8AE2-46A1-BD11-A83CF3E1D2DB} = {0D9F6332-1608-4FD3-BFF0-7B492F0E7919}
+		{B0767E78-6A10-4234-9DE7-A878D151AC31} = {0D9F6332-1608-4FD3-BFF0-7B492F0E7919}
+		{DAA9BEBD-6704-40F3-8CD9-7081B532322F} = {5ADCF002-8AE2-46A1-BD11-A83CF3E1D2DB}
+		{75835584-4407-4D4D-A4EA-229F75F995E4} = {5ADCF002-8AE2-46A1-BD11-A83CF3E1D2DB}
+		{D8901509-2A70-4212-A136-E587C618242F} = {5ADCF002-8AE2-46A1-BD11-A83CF3E1D2DB}
+		{818AA478-F79B-4233-B0FD-BBBD202F42E9} = {5ADCF002-8AE2-46A1-BD11-A83CF3E1D2DB}
+		{0F89218E-3C48-45FD-BCF4-80D0233789A8} = {5ADCF002-8AE2-46A1-BD11-A83CF3E1D2DB}
+		{B6E7E631-DD56-43DD-A811-034AE0658C86} = {B0767E78-6A10-4234-9DE7-A878D151AC31}
+		{0138095C-D02D-4A7D-9602-83504D2E4A2C} = {B0767E78-6A10-4234-9DE7-A878D151AC31}
+		{97361489-C316-495D-945A-E560FE260C3C} = {B0767E78-6A10-4234-9DE7-A878D151AC31}
+		{352AC00A-C4B9-486F-9313-A975B552A1C7} = {B0767E78-6A10-4234-9DE7-A878D151AC31}
+		{DF0EAE5F-DC11-450F-8823-34836A32F471} = {B0767E78-6A10-4234-9DE7-A878D151AC31}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B2811FCF-E0A9-4567-B7BF-A9DCCFA2BF6C}
