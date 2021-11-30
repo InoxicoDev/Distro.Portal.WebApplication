@@ -1,0 +1,6 @@
+[submodule "Distro.Admin.Microservice"]
+	path = Distro.Admin.Microservice
+	url = https://github.com/InoxicoDev/Distro.Admin.Microservice.git
+[submodule "Distro.Ordering.Microservice"]
+	path = Distro.Ordering.Microservice
+	url = https://github.com/InoxicoDev/Distro.Ordering.Microservice.git
