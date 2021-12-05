@@ -3,28 +3,50 @@ using Distro.Ordering.Domain.Entities;
 
 namespace Distro.Portal.WebApplication.Proxies
 {
-    public class OrderProxy : IOrderService
+    public class OrderProxy : ApiProxyBase, IOrderService
     {
-        private readonly IOrderService _orderService;
-        
-        public OrderProxy(IOrderService orderService)
+        public OrderProxy()
         {
-            _orderService = orderService;
+            //TODO: ApiProxyDetails populated from config
+            string baseUrl = @"https://localhost:8333/";
+            string username = "user";
+            string password = "pass";
+            IEnumerable<string>? headers = new List<string>();
+
+            Init(baseUrl, username, password, headers);
         }
 
         public Order AddOrder(Order order)
         {
-            return _orderService.AddOrder(order);
+            var parms = new List<RestSharp.Parameter>()
+            {
+                new RestSharp.Parameter("order", order, RestSharp.ParameterType.QueryString)
+            };
+
+            return Call<Order, Order>(RestSharp.Method.POST,
+                System.Reflection.MethodBase.GetCurrentMethod()?.Name ?? String.Empty, parms);
         }
 
-        public Order? GetOrderById(Guid Id)
+        public Order? GetOrderById(Guid id)
         {
-            return _orderService.GetOrderById(Id);
+            var parms = new List<RestSharp.Parameter>()
+            {
+                new RestSharp.Parameter("Id", id, RestSharp.ParameterType.QueryString)
+            };
+
+            return Call<Order, Guid>(RestSharp.Method.POST,
+                System.Reflection.MethodBase.GetCurrentMethod()?.Name ?? String.Empty, parms);
         }
 
         public Order UpdateOrder(Order order)
         {
-            return _orderService.UpdateOrder(order);
+            var parms = new List<RestSharp.Parameter>()
+            {
+                new RestSharp.Parameter("order", order, RestSharp.ParameterType.RequestBody)
+            };
+
+            return Call<Order, Order>(RestSharp.Method.POST,
+                System.Reflection.MethodBase.GetCurrentMethod()?.Name ?? String.Empty, parms);
         }
     }
 }

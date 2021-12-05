@@ -3,18 +3,28 @@ using Distro.Ordering.Domain.Entities;
 
 namespace Distro.Portal.WebApplication.Proxies
 {
-    public class OrderHistoryProxy : IOrderHistoryService
+    public class OrderHistoryProxy : ApiProxyBase, IOrderHistoryService
     {
-        private readonly IOrderHistoryService _orderHistoryService;
-        
-        public OrderHistoryProxy(IOrderHistoryService orderHistoryService)
+        public OrderHistoryProxy()
         {
-            _orderHistoryService = orderHistoryService;
+            //TODO: ApiProxyDetails populated from config
+            string baseUrl = @"https://localhost:8333/";
+            string username = "user";
+            string password = "pass";
+            IEnumerable<string>? headers = new List<string>();
+
+            Init(baseUrl, username, password, headers);
         }
 
         public IEnumerable<Order> GetOrderHistory(Guid customerId)
         {
-            return _orderHistoryService.GetOrderHistory(customerId);
+            var parms = new List<RestSharp.Parameter>()
+            {
+                new RestSharp.Parameter("customerId", customerId, RestSharp.ParameterType.QueryString)
+            };
+
+            return Call<IEnumerable<Order>, Guid>(RestSharp.Method.POST,
+                System.Reflection.MethodBase.GetCurrentMethod()?.Name ?? String.Empty, parms);
         }
     }
 }
